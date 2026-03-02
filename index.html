@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>stayeii | Hostel Services, Smarter Stays</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <header class="topbar container">
+    <div class="logo">
+      <span class="logo-mark">s</span>
+      <span class="logo-text">stayeii</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#discover">Discover</a>
+      <a href="#services">Services</a>
+      <a href="#partners">For Hostels</a>
+    </nav>
+    <button class="btn btn-light">Login</button>
+  </header>
+
+  <main>
+    <section class="hero container" id="discover">
+      <div class="hero-copy reveal">
+        <p class="tag">HOSTEL LIVING, REDEFINED</p>
+        <h1>Book your next <span>stayeii</span> with premium hostel services.</h1>
+        <p class="subtitle">From verified hostels to daily meal plans and laundry subscriptions, everything is managed in one place.</p>
+        <div class="stats-row">
+          <div>
+            <strong>2300+</strong>
+            <span>Beds Available Today</span>
+          </div>
+          <div>
+            <strong>120+</strong>
+            <span>Cities Covered</span>
+          </div>
+          <div>
+            <strong>4.7/5</strong>
+            <span>Average Guest Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="search-panel reveal" id="searchForm">
+        <h2>Find Your Hostel</h2>
+        <label>
+          City / Area
+          <input type="text" id="city" placeholder="e.g. Bengaluru, Koramangala" required />
+        </label>
+        <label>
+          Check-in
+          <input type="date" id="checkin" required />
+        </label>
+        <label>
+          Stay Duration
+          <select id="duration">
+            <option value="1 Month">1 Month</option>
+            <option value="3 Months">3 Months</option>
+            <option value="6 Months">6 Months</option>
+            <option value="12 Months">12 Months</option>
+          </select>
+        </label>
+        <label>
+          Budget / Month
+          <select id="budget">
+            <option value="?6,000 - ?10,000">?6,000 - ?10,000</option>
+            <option value="?10,000 - ?15,000">?10,000 - ?15,000</option>
+            <option value="?15,000 - ?20,000">?15,000 - ?20,000</option>
+            <option value="?20,000+">?20,000+</option>
+          </select>
+        </label>
+        <button class="btn btn-primary" type="submit">Search Hostels</button>
+      </form>
+    </section>
+
+    <section class="trusted container" id="partners">
+      <p>Trusted by leading hostel operators</p>
+      <div class="trust-grid">
+        <span>UrbanNest</span>
+        <span>MetroRooms</span>
+        <span>CampusHaven</span>
+        <span>SkyDorm</span>
+        <span>CoLive+</span>
+      </div>
+    </section>
+
+    <section class="listings container">
+      <div class="section-head">
+        <h2>Top Picked Hostels</h2>
+        <button class="btn btn-ghost">View All</button>
+      </div>
+
+      <div class="cards" id="hostelCards">
+        <article class="card reveal">
+          <div class="chip">Girls Hostel</div>
+          <h3>Stayeii Central Park</h3>
+          <p class="location">HSR Layout, Bengaluru</p>
+          <ul>
+            <li>AC + Wi-Fi + Housekeeping</li>
+            <li>Breakfast & Dinner Included</li>
+            <li>Biometric Entry</li>
+          </ul>
+          <div class="price-row">
+            <strong>?11,499/mo</strong>
+            <button class="btn btn-card">Book Bed</button>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="chip">Boys Hostel</div>
+          <h3>Stayeii Tech Square</h3>
+          <p class="location">Hinjewadi, Pune</p>
+          <ul>
+            <li>High-speed Wi-Fi + Study Lounges</li>
+            <li>Laundry Plan Included</li>
+            <li>Gym Access</li>
+          </ul>
+          <div class="price-row">
+            <strong>?9,999/mo</strong>
+            <button class="btn btn-card">Book Bed</button>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="chip">Co-Ed Hostel</div>
+          <h3>Stayeii Riverside Hub</h3>
+          <p class="location">Gachibowli, Hyderabad</p>
+          <ul>
+            <li>Shared Suites + Quiet Floors</li>
+            <li>24/7 Security Desk</li>
+            <li>Weekend Community Events</li>
+          </ul>
+          <div class="price-row">
+            <strong>?13,250/mo</strong>
+            <button class="btn btn-card">Book Bed</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="services container" id="services">
+      <div class="section-head">
+        <h2>Beyond Bed Booking</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <h3>Meal Subscriptions</h3>
+          <p>Choose veg/non-veg weekly plans with calorie and allergy preferences.</p>
+        </article>
+        <article class="service-card reveal">
+          <h3>Pickup & Move-in</h3>
+          <p>Airport or station pickup with verified onboarding support.</p>
+        </article>
+        <article class="service-card reveal">
+          <h3>Laundry & Cleaning</h3>
+          <p>One tap scheduling for wash cycles and room refresh services.</p>
+        </article>
+        <article class="service-card reveal">
+          <h3>Community Events</h3>
+          <p>Meetups, sports nights, and skill sessions organized every weekend.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta container">
+      <div>
+        <h2>Need help choosing the right hostel?</h2>
+        <p>Our stay advisors shortlist options and schedule virtual tours in under 10 minutes.</p>
+      </div>
+      <button class="btn btn-primary" id="advisorBtn">Talk to an Advisor</button>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div class="logo">
+      <span class="logo-mark">s</span>
+      <span class="logo-text">stayeii</span>
+    </div>
+    <p>© 2026 stayeii. Built for smarter hostel services.</p>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
